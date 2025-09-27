@@ -698,7 +698,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Experience Section */
 .experience {
     padding: 6rem 0;
-    background: var(--white);
+    background: var(--light-gray);
 }
 
 .timeline {
@@ -916,6 +916,151 @@ h1, h2, h3, h4, h5, h6 {
 
 .project-link:hover {
     color: var(--dark-blue);
+}
+
+/* Education Section */
+.education {
+    padding: 6rem 0;
+    background: var(--white);
+}
+
+.education-content {
+    display: grid;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-item {
+    background: var(--light-gray);
+    padding: 2rem;
+    border-radius: 12px;
+    border-left: 4px solid var(--primary-blue);
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.education-header h3 {
+    color: var(--dark-blue);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.education-year {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.education-details {
+    color: var(--text-dark);
+}
+
+.education-institution {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--dark-blue);
+}
+
+.education-grade {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 6rem 0;
+    background: var(--light-gray);
+    position: relative;
+    overflow: hidden;
+}
+
+.certifications .container {
+    position: relative;
+    z-index: 2;
+}
+
+.certifications .section-title {
+    color: var(--dark-blue);
+}
+
+.certifications-content {
+    display: grid;
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.certification-item {
+    background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--primary-blue);
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+    box-shadow: 0 4px 6px rgba(30, 64, 175, 0.2);
+}
+
+.certification-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+}
+
+.certification-header h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+.certification-provider {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.95rem;
+    margin: 0 0 1rem 0;
+}
+
+.certification-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.certification-link:hover {
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: var(--white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.certification-link i {
+    font-size: 0.8rem;
 }
 
 /* Contact Section */
